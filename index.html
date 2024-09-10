@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/estaqueoLote6_1.js"></script><script src="layers/L6ESTESI_2.js"></script><script src="layers/ESTAQUEOSL5_3.js"></script><script src="layers/POSTACINSISTEMA_4.js"></script><script src="layers/EstaqueoVTA2_5.js"></script><script src="layers/ESTAQUEOLOTE3DELSISTEMA_6.js"></script><script src="layers/VAU24_7.js"></script><script src="layers/ESTAQUEO_VAUN3_8.js"></script><script src="layers/BPAN1_9.js"></script><script src="layers/ESTAQUEOSVAU3_10.js"></script><script src="layers/ESTAQUEO_VAU12_11.js"></script><script src="layers/ESTAQUEO_VAU25_12.js"></script><script src="layers/ESTAQUEOVAU9_13.js"></script><script src="layers/ESTAQUEOL2VILMA_14.js"></script><script src="layers/ESTAQUEO_VAU28_15.js"></script><script src="layers/ESTAQUEO_VAU01_16.js"></script><script src="layers/LOTE1REP06_17.js"></script><script src="layers/VAU3_18.js"></script><script src="layers/ESTAQUEIL1VILMA_19.js"></script><script src="layers/LOTE1ESTAQUEOREP03_20.js"></script><script src="layers/Estaqueosistema_21.js"></script><script src="layers/GDI05_22.js"></script><script src="layers/postexist_23.js"></script><script src="layers/postacinL60509_24.js"></script><script src="layers/PostacinL5_25.js"></script><script src="layers/PostacionExistenteL5_26.js"></script><script src="layers/POSTACIEXISTENTE_27.js"></script><script src="layers/PostacinL4redminehastael1608_28.js"></script><script src="layers/POSTACIEXISTENTEL4_29.js"></script><script src="layers/POSTACIN_LOTE4_30.js"></script><script src="layers/PostacionL3_31.js"></script><script src="layers/postacinALT3_32.js"></script><script src="layers/postacinITG20609_33.js"></script><script src="layers/ITG11_34.js"></script><script src="layers/GHN1_35.js"></script><script src="layers/postesExistentesLote2_36.js"></script><script src="layers/postesagregadosmanualmente_37.js"></script><script src="layers/PostacinfichasL22808_38.js"></script><script src="layers/PostacinL2AgostoySeptiembre_39.js"></script><script src="layers/PostacinL10509_40.js"></script><script src="layers/PostacinL1Sistema5092024_41.js"></script><script src="layers/PostacinExistenteL1_42.js"></script><script src="layers/APL3_43.js"></script><script src="layers/APL1_44.js"></script><script src="layers/PD5_45.js"></script><script src="layers/PDL5_46.js"></script><script src="layers/PDL4_47.js"></script><script src="layers/PDL3_48.js"></script><script src="layers/PDL2_49.js"></script><script src="layers/PDL1_50.js"></script><script src="layers/MT3x185_L6_51.js"></script><script src="layers/MT3x70_52.js"></script><script src="layers/MT3x35_53.js"></script><script src="layers/BT3x701x501x25_54.js"></script><script src="layers/MT3x185_L5_55.js"></script><script src="layers/MT3x35_L5_56.js"></script><script src="layers/MT3x70L5_57.js"></script><script src="layers/BT3x701x501x25L5_58.js"></script><script src="layers/MT3x185_L4_59.js"></script><script src="layers/MT_3x70_60.js"></script><script src="layers/MT_3x35_61.js"></script><script src="layers/BT3x701x501x25_62.js"></script><script src="layers/BT3x701x501x25actual_63.js"></script><script src="layers/MT3x185L3_64.js"></script><script src="layers/MT3x70L3_65.js"></script><script src="layers/MT3x35_L3_66.js"></script><script src="layers/BT3x701x501x25L3_67.js"></script><script src="layers/MT3x185L2_68.js"></script><script src="layers/MT3x70L2_69.js"></script><script src="layers/MT3x35L2_70.js"></script><script src="layers/BT3x701x501x25_71.js"></script><script src="layers/MT240L2Subterrneo_72.js"></script><script src="layers/MT3x185L1_73.js"></script><script src="layers/MT3x70L1_74.js"></script><script src="layers/MT3x35L1_75.js"></script><script src="layers/BT3x701x501x25L1_76.js"></script>
+        <script src="styles/estaqueoLote6_1_style.js"></script><script src="styles/L6ESTESI_2_style.js"></script><script src="styles/ESTAQUEOSL5_3_style.js"></script><script src="styles/POSTACINSISTEMA_4_style.js"></script><script src="styles/EstaqueoVTA2_5_style.js"></script><script src="styles/ESTAQUEOLOTE3DELSISTEMA_6_style.js"></script><script src="styles/VAU24_7_style.js"></script><script src="styles/ESTAQUEO_VAUN3_8_style.js"></script><script src="styles/BPAN1_9_style.js"></script><script src="styles/ESTAQUEOSVAU3_10_style.js"></script><script src="styles/ESTAQUEO_VAU12_11_style.js"></script><script src="styles/ESTAQUEO_VAU25_12_style.js"></script><script src="styles/ESTAQUEOVAU9_13_style.js"></script><script src="styles/ESTAQUEOL2VILMA_14_style.js"></script><script src="styles/ESTAQUEO_VAU28_15_style.js"></script><script src="styles/ESTAQUEO_VAU01_16_style.js"></script><script src="styles/LOTE1REP06_17_style.js"></script><script src="styles/VAU3_18_style.js"></script><script src="styles/ESTAQUEIL1VILMA_19_style.js"></script><script src="styles/LOTE1ESTAQUEOREP03_20_style.js"></script><script src="styles/Estaqueosistema_21_style.js"></script><script src="styles/GDI05_22_style.js"></script><script src="styles/postexist_23_style.js"></script><script src="styles/postacinL60509_24_style.js"></script><script src="styles/PostacinL5_25_style.js"></script><script src="styles/PostacionExistenteL5_26_style.js"></script><script src="styles/POSTACIEXISTENTE_27_style.js"></script><script src="styles/PostacinL4redminehastael1608_28_style.js"></script><script src="styles/POSTACIEXISTENTEL4_29_style.js"></script><script src="styles/POSTACIN_LOTE4_30_style.js"></script><script src="styles/PostacionL3_31_style.js"></script><script src="styles/postacinALT3_32_style.js"></script><script src="styles/postacinITG20609_33_style.js"></script><script src="styles/ITG11_34_style.js"></script><script src="styles/GHN1_35_style.js"></script><script src="styles/postesExistentesLote2_36_style.js"></script><script src="styles/postesagregadosmanualmente_37_style.js"></script><script src="styles/PostacinfichasL22808_38_style.js"></script><script src="styles/PostacinL2AgostoySeptiembre_39_style.js"></script><script src="styles/PostacinL10509_40_style.js"></script><script src="styles/PostacinL1Sistema5092024_41_style.js"></script><script src="styles/PostacinExistenteL1_42_style.js"></script><script src="styles/APL3_43_style.js"></script><script src="styles/APL1_44_style.js"></script><script src="styles/PD5_45_style.js"></script><script src="styles/PDL5_46_style.js"></script><script src="styles/PDL4_47_style.js"></script><script src="styles/PDL3_48_style.js"></script><script src="styles/PDL2_49_style.js"></script><script src="styles/PDL1_50_style.js"></script><script src="styles/MT3x185_L6_51_style.js"></script><script src="styles/MT3x70_52_style.js"></script><script src="styles/MT3x35_53_style.js"></script><script src="styles/BT3x701x501x25_54_style.js"></script><script src="styles/MT3x185_L5_55_style.js"></script><script src="styles/MT3x35_L5_56_style.js"></script><script src="styles/MT3x70L5_57_style.js"></script><script src="styles/BT3x701x501x25L5_58_style.js"></script><script src="styles/MT3x185_L4_59_style.js"></script><script src="styles/MT_3x70_60_style.js"></script><script src="styles/MT_3x35_61_style.js"></script><script src="styles/BT3x701x501x25_62_style.js"></script><script src="styles/BT3x701x501x25actual_63_style.js"></script><script src="styles/MT3x185L3_64_style.js"></script><script src="styles/MT3x70L3_65_style.js"></script><script src="styles/MT3x35_L3_66_style.js"></script><script src="styles/BT3x701x501x25L3_67_style.js"></script><script src="styles/MT3x185L2_68_style.js"></script><script src="styles/MT3x70L2_69_style.js"></script><script src="styles/MT3x35L2_70_style.js"></script><script src="styles/BT3x701x501x25_71_style.js"></script><script src="styles/MT240L2Subterrneo_72_style.js"></script><script src="styles/MT3x185L1_73_style.js"></script><script src="styles/MT3x70L1_74_style.js"></script><script src="styles/MT3x35L1_75_style.js"></script><script src="styles/BT3x701x501x25L1_76_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
